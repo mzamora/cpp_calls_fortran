@@ -25,12 +25,11 @@ int main()
     int i;
     int k;
 
-    std::vector<double> y_blktri(n*m, double(4.)); //right hand size, then output
+    std::vector<double> y_blktri(n*m, double(0.)); //right hand size, then output
     std::vector<double> w_blktri(k_blktri, double(0.));//w_blktri(k_blktri);
 
-    iflag = 0;
-
     //blktri: initialize
+    iflag = 0;
     c_blktri(&iflag,&np,&n,&an[0],&bn[0],&cn[0],&mp,&m,&am[0],&bm[0],&cm[0],&m,&y_blktri[0],&ierror,&w_blktri[0],&k_blktri);
     std::cout << "[test_blktri.cpp] Error:"<< ierror << "\n";
 
@@ -38,7 +37,6 @@ int main()
     iflag = 1;
     c_blktri(&iflag,&np,&n,&an[0],&bn[0],&cn[0],&mp,&m,&am[0],&bm[0],&cm[0],&m,&y_blktri[0],&ierror,&w_blktri[0],&k_blktri);
     std::cout << "[test_blktri.cpp] Error:"<< ierror << "\n";
-
 
    return 0;
 }

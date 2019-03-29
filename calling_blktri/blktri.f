@@ -228,6 +228,36 @@ C***********************************************************************
       EXTERNAL        PROD       ,PRODP      ,CPROD      ,CPRODP        
       COMMON /CBLKT/  NPP        ,K          ,EPS        ,CNV        ,  
      1                NM         ,NCMPLX     ,IK                        
+C
+C MZ:checking passing variables
+C
+      PRINT *, "In Fortran, inside blktri"
+      PRINT *, "In Fortran, iflg=", IFLG
+      PRINT *, "In Fortran, np=", NP
+      PRINT *, "In Fortran, n=", N
+      PRINT *, "In Fortran, an(1)=", AN(1)
+      PRINT *, "In Fortran, an(n)=", AN(N)
+      PRINT *, "In Fortran, bn(1)=", BN(1)
+      PRINT *, "In Fortran, bn(n)=", BN(N)
+      PRINT *, "In Fortran, cn(1)=", CN(1)
+      PRINT *, "In Fortran, cn(n)=", CN(N)
+      PRINT *, "In Fortran, mp=", MP
+      PRINT *, "In Fortran, m=", M
+      PRINT *, "In Fortran, am(1)=", AM(1)
+      PRINT *, "In Fortran, am(m)=", AM(M)
+      PRINT *, "In Fortran, bm(1)=", BM(1)
+      PRINT *, "In Fortran, bm(m)=", BM(M)
+      PRINT *, "In Fortran, cm(1)=", CM(1)
+      PRINT *, "In Fortran, cm(m)=", CM(M)
+      PRINT *, "In Fortran, idimy=", IDIMY
+      PRINT *, "In Fortran, y(1,1)=", Y(1,1)
+      PRINT *, "In Fortran, y(m,1)=", Y(M,1)
+      PRINT *, "In Fortran, y(1,n)=", Y(1,N)
+      PRINT *, "In Fortran, y(m,n)=", Y(M,N)
+      PRINT *, "In Fortran, ierror", IERROR
+      PRINT *, "In Fortran, w(1)=", W(1)
+C      PRINT *, "In Fortran, w(k)=", W()
+
 C                                                                       
 C TEST M AND N FOR THE PROPER FORM                                      
 C                                                                       
