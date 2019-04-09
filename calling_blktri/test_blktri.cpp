@@ -25,8 +25,8 @@ int main()
     int i;
     int k;
 
-    std::vector<double> y_blktri(n*m, double(0.)); //right hand size, then output
-    std::vector<double> w_blktri(k_blktri, double(0.));//w_blktri(k_blktri);
+    std::vector<double> y_blktri(n*m, double(4.)); //right hand size, then output
+    std::vector<double> w_blktri(k_blktri, double(1.));//w_blktri(k_blktri);
 
     //blktri: initialize
     iflag = 0;

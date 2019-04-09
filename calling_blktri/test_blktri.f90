@@ -36,6 +36,7 @@ write(*,*) 'Error running ',ierror
 write(*,*) 'w(k)=',w(k)
 write(*,*) 'y(1,1)=',y(1,1)
 write(*,*) 'y(10,1)=',y(10,1)
+write(*,*) 'y(32,32)=',y(32,32)
 
 
 open (10, file = 'test_fout.csv')

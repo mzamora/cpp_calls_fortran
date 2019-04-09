@@ -232,31 +232,31 @@ C
 C MZ:checking passing variables
 C
       PRINT *, "In Fortran, inside blktri"
-      PRINT *, "In Fortran, iflg=", IFLG
-      PRINT *, "In Fortran, np=", NP
-      PRINT *, "In Fortran, n=", N
-      PRINT *, "In Fortran, an(1)=", AN(1)
-      PRINT *, "In Fortran, an(n)=", AN(N)
-      PRINT *, "In Fortran, bn(1)=", BN(1)
-      PRINT *, "In Fortran, bn(n)=", BN(N)
-      PRINT *, "In Fortran, cn(1)=", CN(1)
-      PRINT *, "In Fortran, cn(n)=", CN(N)
-      PRINT *, "In Fortran, mp=", MP
-      PRINT *, "In Fortran, m=", M
-      PRINT *, "In Fortran, am(1)=", AM(1)
-      PRINT *, "In Fortran, am(m)=", AM(M)
-      PRINT *, "In Fortran, bm(1)=", BM(1)
-      PRINT *, "In Fortran, bm(m)=", BM(M)
-      PRINT *, "In Fortran, cm(1)=", CM(1)
-      PRINT *, "In Fortran, cm(m)=", CM(M)
-      PRINT *, "In Fortran, idimy=", IDIMY
-      PRINT *, "In Fortran, y(1,1)=", Y(1,1)
-      PRINT *, "In Fortran, y(m,1)=", Y(M,1)
-      PRINT *, "In Fortran, y(1,n)=", Y(1,N)
-      PRINT *, "In Fortran, y(m,n)=", Y(M,N)
-      PRINT *, "In Fortran, ierror", IERROR
-      PRINT *, "In Fortran, w(1)=", W(1)
-C      PRINT *, "In Fortran, w(k)=", W()
+      PRINT *, "[blktri.f] iflg=", IFLG
+      PRINT *, "[blktri.f] np=", NP
+      PRINT *, "[blktri.f] n=", N
+      PRINT *, "[blktri.f] an(1)=", AN(1)
+      PRINT *, "[blktri.f] an(n)=", AN(N)
+      PRINT *, "[blktri.f] bn(1)=", BN(1)
+      PRINT *, "[blktri.f] bn(n)=", BN(N)
+      PRINT *, "[blktri.f] cn(1)=", CN(1)
+      PRINT *, "[blktri.f] cn(n)=", CN(N)
+      PRINT *, "[blktri.f] mp=", MP
+      PRINT *, "[blktri.f] m=", M
+      PRINT *, "[blktri.f] am(1)=", AM(1)
+      PRINT *, "[blktri.f] am(m)=", AM(M)
+      PRINT *, "[blktri.f] bm(1)=", BM(1)
+      PRINT *, "[blktri.f] bm(m)=", BM(M)
+      PRINT *, "[blktri.f] cm(1)=", CM(1)
+      PRINT *, "[blktri.f] cm(m)=", CM(M)
+      PRINT *, "[blktri.f] idimy=", IDIMY
+      PRINT *, "[blktri.f] y(1,1)=", Y(1,1)
+      PRINT *, "[blktri.f] y(m,1)=", Y(M,1)
+      PRINT *, "[blktri.f] y(1,n)=", Y(1,N)
+      PRINT *, "[blktri.f] y(m,n)=", Y(M,N)
+      PRINT *, "[blktri.f] ierror", IERROR
+      PRINT *, "[blktri.f] w(1)=", W(1)
+      PRINT *, "[blktri.f] w(10)=", W(10)
 
 C                                                                       
 C TEST M AND N FOR THE PROPER FORM                                      
