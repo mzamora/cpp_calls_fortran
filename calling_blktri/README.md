@@ -21,4 +21,7 @@ g++ fishpack_wrapper.o blktri.o comf.o test_blktri.o -o test_cpp -lgfortran
 ./test_cpp
 ```
 
-First error is 4 :(. Values of y after solving differ from the fortran test.
+~~First error is 4 :(. Values of y after solving differ from the fortran test.~~
+
+Now it works! Lessons learnt: be really careful with variable type when using iso_c_binding. Here we were 
+able to make it work by using intermediate variables as real and converting c_double to real and back.
