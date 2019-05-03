@@ -5,7 +5,7 @@ implicit none
 integer, parameter :: n=64
 integer, parameter :: m=64
 integer, parameter :: k=1676
-integer :: ierror,np,mp
+integer :: ierror,mp,np
 real, dimension(n):: an,bn,cn
 real, dimension(m):: am,bm,cm
 real, dimension(k):: w
@@ -38,9 +38,9 @@ write(*,*) 'y(1,1)=',y(1,1)
 write(*,*) 'y(10,1)=',y(10,1)
 write(*,*) 'y(32,32)=',y(32,32)
 
-
-open (10, file = 'test_fout.csv')
-write(10,*) 'ix,iy,f'
+! writing out things
+open (10, file = 'y_xy.txt')
+write(10,*) 'im,in,f(im,in)'
 do np=1,n
 	do mp=1,m
 		write(10,*) mp,',',np,',',y(mp,np)
